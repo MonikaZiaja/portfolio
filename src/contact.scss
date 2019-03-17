@@ -1,0 +1,102 @@
+@import '_colors';
+.contactSection__callMe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: $bgHover_2;
+    padding: 30px;
+    border-bottom: 2px solid $bgHover_3;
+    height: 60vh;
+    
+}
+.contactSection__title--callMe{
+    color: $col;
+    font-weight: 300;
+    text-align: center;
+    font-size: 60px;
+    
+}
+.contact__title{
+    display: none;
+    height: 10vh;
+    border-top: 2px solid $bgHover_2;
+    text-align: center;
+    background: $bgHover_3;
+    color: $col;
+    font-weight: 300;
+    padding: 10vh;
+    padding-bottom: 0vh;
+}
+.contactSection{
+    height: 50vh;
+    background: $bgHover_3;
+    display: flex;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    flex-basis: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 10vh;
+    border-bottom: 2px solid $bg;
+}
+
+.contactItem{
+    width: 20%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactItem__font{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    color: $col;
+    font-size: 20px;
+    // padding: 10px;
+    background: $bgHover_3;
+    border: 2px solid $colO50;
+    border-radius: 50%;
+    outline: none;
+}
+.contactItem__data{
+    color: $col;
+    font-size: 16px;
+    font-weight: 300;
+    display: none;
+
+}
+
+@media(orientation: landscape){
+    .contactItem{
+        width: 20%;
+        margin: 4vh 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contactItem__font{
+        width: 100px;
+        height: 100px;
+        color: $col;
+        font-size: 40px;
+        padding: 1vh;
+        background: $bgHover_3;
+        border: 2px solid $colO50;
+        border-radius: 50%;
+        outline: none;
+        cursor: pointer;
+        transition: all .3s ease-in-out, color .2s ease-in-out ; 
+
+        &:hover{
+            color: $bgHover_3;
+            background: $colO50;
+            transform: scale(1.1);
+        }
+    }
+   
+}

@@ -1,0 +1,427 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|Lato:300,400,700|Parisienne&amp;subset=latin-ext");
+.mainHeader {
+  height: 110vh;
+  width: 100vw;
+  background: url("./img/header.jpg") center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.mainHeader__panels {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  top: 80vh;
+  width: 70vw;
+  margin: auto 15vw;
+}
+
+.mainHeader__me {
+  position: relative;
+  width: 35vw;
+  top: 30%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.me__myName {
+  font-family: 'Fredericka the Great', cursive;
+  padding: 20px;
+  display: block;
+  text-align: center;
+  width: 35vw;
+  background: rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.7);
+  color: white;
+  color: black;
+  border: 1px solid white;
+  font-weight: 300;
+  font-size: 60px;
+  letter-spacing: 3px;
+}
+
+.me__prof {
+  border: 1px solid white;
+  color: white;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-weight: 300;
+  width: 30vw;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.me__prof--dev, .me__prof--data, .me__prof--math {
+  display: block;
+  font-size: 10px;
+  margin: 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20vw;
+  color: white;
+  background: black;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  cursor: pointer;
+}
+
+.panel:hover {
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  -webkit-transform: translateX(-5px) translateY(-5px);
+          transform: translateX(-5px) translateY(-5px);
+  background: #BF7E04;
+}
+
+.panel__title {
+  font-weight: 300;
+  margin: 3vh auto;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px dashed white;
+  letter-spacing: 2px;
+  font-size: 24px;
+}
+
+.panel_descript {
+  font-weight: 300;
+  padding: 20px 10px;
+  line-height: 2em;
+  height: 40vh;
+  text-align: center;
+  margin: auto;
+}
+
+.panel__btn {
+  margin: 3vh;
+  padding: 20px;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 2px solid white;
+  background: transparent;
+  outline: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.panel__btn:hover {
+  letter-spacing: 3px;
+  padding: 20px 30px;
+}
+
+@media (orientation: portrait) {
+  .mainHeader {
+    height: 110vh;
+    width: 100vw;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .mainHeader__panels {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    top: 70vh;
+    width: 90vw;
+    margin: 5vw;
+  }
+  .mainHeader__me {
+    position: relative;
+    width: 35vw;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .me__myName {
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 75vw;
+    background: white;
+    background: rgba(255, 255, 255, 0.3);
+    color: black;
+    border: 1px solid black;
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+  .me__prof {
+    border: 1px solid white;
+    color: white;
+    background: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 300;
+    width: 90vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .me__prof--dev, .me__prof--data, .me__prof--math {
+    display: block;
+    font-size: 8px;
+    margin: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 70%;
+    color: white;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    margin: 20px auto;
+  }
+  .panel:hover {
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: none;
+            transform: none;
+    background: #BF7E04;
+  }
+  .panel__title {
+    font-weight: 300;
+    padding: 10px;
+    text-align: center;
+    border-bottom: none;
+    letter-spacing: 2px;
+    font-size: 24px;
+  }
+  .panel_descript {
+    display: none;
+    font-weight: 300;
+    padding: 20px 10px;
+    text-align: justify;
+  }
+  .panel__btn {
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    background: transparent;
+    outline: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  .panel__btn:hover {
+    letter-spacing: 3px;
+    padding: 10px 20px;
+  }
+}
+
+@media (orientation: landscape) {
+  .mainHeader {
+    height: 110vh;
+    width: 100vw;
+    background: url("./img/header.jpg") center;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  .mainHeader__panels {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    top: 80vh;
+    width: 70vw;
+    margin: auto 15vw;
+  }
+  .mainHeader__me {
+    position: relative;
+    width: 35vw;
+    top: 30%;
+    left: 50%;
+    -webkit-transform: translate(-50%);
+            transform: translate(-50%);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .me__myName {
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 35vw;
+    background: rgba(0, 0, 0, 0.3);
+    background: rgba(255, 255, 255, 0.7);
+    color: white;
+    color: black;
+    border: 1px solid white;
+    font-weight: 300;
+    font-size: 60px;
+    letter-spacing: 3px;
+  }
+  .me__prof {
+    border: 1px solid white;
+    color: white;
+    background: black;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-weight: 300;
+    width: 30vw;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .me__prof--dev, .me__prof--data, .me__prof--math {
+    display: block;
+    font-size: 10px;
+    margin: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  .panel {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 20vw;
+    color: white;
+    background: black;
+    padding: 20px;
+    border-radius: 10px;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+  }
+  .panel:hover {
+    -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    -webkit-transform: translateX(-5px) translateY(-5px) scale(1.05);
+            transform: translateX(-5px) translateY(-5px) scale(1.05);
+    background: #BF7E04;
+  }
+  .panel__title {
+    font-weight: 300;
+    margin: 3vh auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px dashed white;
+    letter-spacing: 2px;
+    font-size: 24px;
+  }
+  .panel_descript {
+    font-weight: 300;
+    padding: 20px 10px;
+    line-height: 2em;
+    height: 40vh;
+    text-align: center;
+    margin: auto;
+  }
+  .panel__btn {
+    margin: 3vh;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    background: transparent;
+    outline: none;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+  }
+  .panel__btn:hover {
+    letter-spacing: 3px;
+    padding: 20px 30px;
+  }
+}
+/*# sourceMappingURL=header.css.map */

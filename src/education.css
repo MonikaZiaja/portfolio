@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|Lato:300,400,700|Parisienne&amp;subset=latin-ext");
+.educationSection {
+  margin: 5vw;
+  padding: 5vw 0;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.education__title {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 40px;
+}
+
+.education__uni {
+  padding: 5px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.education__dep {
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.education__degree {
+  padding: 15px 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.courses__title {
+  margin: 30px auto;
+  font-size: 30px;
+  text-align: center;
+  background: #002427;
+  color: white;
+  padding: 40px 20px;
+  font-weight: normal;
+}
+
+.course {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 80vw;
+  margin: auto;
+}
+
+.courseHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.course__title {
+  color: #BF7E04;
+  padding: 20px;
+  font-size: 20px;
+}
+
+.course__author {
+  padding: 0px;
+}
+
+.course__date {
+  padding: 0px;
+}
+
+.course__descript {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.descript__txt {
+  width: 50%;
+  padding: 10px;
+}
+
+.descript__tech {
+  width: 50%;
+  padding: 10px;
+}
+
+@media (orientation: landscape) {
+  .educationSection {
+    margin: 5vw;
+    padding: 5vw;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+  }
+  .education__title {
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+  }
+  .education__uni {
+    padding: 5px;
+    text-align: center;
+    font-size: 34px;
+  }
+  .education__dep {
+    padding: 5px;
+    text-align: center;
+    font-size: 26px;
+  }
+  .education__degree {
+    font-size: 24px;
+    padding: 10px;
+  }
+  .course {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 80vw;
+    margin: auto;
+  }
+  .courseHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .course__title {
+    color: #BF7E04;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .course__author {
+    padding: 0px;
+  }
+  .course__date {
+    padding: 0px;
+  }
+  .course__descript {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 10px;
+  }
+  .descript__txt {
+    width: 50%;
+    padding: 10px;
+  }
+  .descript__tech {
+    width: 50%;
+    padding: 10px;
+  }
+}
+/*# sourceMappingURL=education.css.map */

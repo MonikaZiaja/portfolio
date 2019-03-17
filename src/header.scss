@@ -1,0 +1,377 @@
+@import '_colors';
+.mainHeader{
+    // transform: translateY(-56px);
+    height: 110vh;
+    width: 100vw;
+    background: url('./img/header.jpg') center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.mainHeader__panels{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 80vh;
+    width: 70vw;
+    margin: auto 15vw;
+    
+}
+.mainHeader__me{
+    position:relative;
+    width: 35vw;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.me__myName{
+    // font-family: 'Dancing Script', cursive;
+    // font-family: 'Parisienne', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 35vw;
+    background: $bgO30;
+    background: $colO70;
+    color: $col;
+    color: $bg;
+    border: 1px solid $col;
+    font-weight: 300;
+    font-size: 60px;
+    // text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.me__prof{
+    // padding: 2px;
+    border: 1px solid $col;
+    color: $col;
+    background: $bg;
+    display: flex;
+    font-weight: 300;
+    width: 30vw;
+    justify-content: space-around;
+    transform:translateY(-50%);
+    
+}
+.me__prof--dev, .me__prof--data, .me__prof--math{
+    display: block;
+    // width: 10vw;
+    font-size: 10px;
+    margin: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    // height: 50vh;
+    width: 20vw;
+    color: $col;
+    background: $bg;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 5px 5px 10px $bgO30;
+        transform: translateX(-5px) translateY(-5px);
+        background: $bgHover_2;
+    }
+
+}
+
+.panel__title{
+    font-weight: 300;
+    margin: 3vh auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px dashed $col;
+    letter-spacing: 2px;
+    font-size: 24px;
+
+}
+.panel_descript{
+    font-weight: 300;
+    padding: 20px 10px;
+    line-height: 2em;
+    height: 40vh;
+    text-align: center;
+    margin: auto;
+}
+
+.panel__btn{
+    margin: 3vh;
+    padding: 20px;
+    color: $col;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid $col;
+    background: transparent;
+    outline: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        letter-spacing: 3px;
+        padding: 20px 30px;
+        
+    }
+}
+
+@media(orientation:portrait){
+    .mainHeader{
+        // transform: translateY(-56px);
+        
+        height: 110vh;
+        width: 100vw;
+       
+        background-size: cover;
+        background-attachment: fixed;
+    }
+    .mainHeader__panels{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        top: 70vh;
+        width: 90vw;
+        margin: 5vw;
+        
+    }
+    .mainHeader__me{
+        position:relative;
+        width: 35vw;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .me__myName{
+        // font-family: 'Dancing Script', cursive;
+        // font-family: 'Parisienne', cursive;
+        font-family: 'Fredericka the Great', cursive;
+        padding: 20px;
+        display: block;
+        text-align: center;
+        width: 75vw;
+        background: $col;
+        background: $colO30;
+        // color: $col;
+        color: $bg;
+        border: 1px solid $bg;
+        font-weight: 300;
+        font-size: 40px;
+        // text-transform: uppercase;
+        letter-spacing: 3px;
+    
+    }
+    .me__prof{
+        // padding: 2px;
+        border: 1px solid $col;
+        color: $col;
+        background: $bg;
+        display: flex;
+        font-weight: 300;
+        width: 90vw;
+        justify-content: space-around;
+        transform:translateY(-50%);
+        
+    }
+    .me__prof--dev, .me__prof--data, .me__prof--math{
+        display: block;
+        // width: 10vw;
+        font-size: 8px;
+        margin: 8px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
+    .panel{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        // height: 50vh;
+        width: 70%;
+        color: $col;
+        background: $bg;
+        padding: 20px;
+        border-radius: 10px;
+        transition: all .4s ease-in-out;
+        cursor: pointer;
+        margin: 20px auto;
+        &:hover{
+            box-shadow: 5px 5px 10px $bgO30;
+            transform: none;
+            background: $bgHover_2;
+        }
+    
+    }
+    
+    .panel__title{
+        font-weight: 300;
+        padding: 10px;
+        text-align: center;
+        border-bottom: none;
+        letter-spacing: 2px;
+        font-size: 24px;
+    
+    }
+    .panel_descript{
+        display: none;
+        font-weight: 300;
+        padding: 20px 10px;
+        text-align: justify;
+    }
+    
+    .panel__btn{
+        margin: 10px;
+        padding: 10px;
+        color: $col;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        border: 2px solid $col;
+        background: transparent;
+        outline: none;
+        transition: all .3s ease-in-out;
+        cursor: pointer;
+        &:hover{
+            letter-spacing: 3px;
+            padding: 10px 20px;
+            
+        }
+    }
+}
+@media(orientation: landscape){
+.mainHeader{
+    // transform: translateY(-56px);
+    height: 110vh;
+    width: 100vw;
+    background: url('./img/header.jpg') center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.mainHeader__panels{
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    top: 80vh;
+    width: 70vw;
+    margin: auto 15vw;
+    
+}
+.mainHeader__me{
+    position:relative;
+    width: 35vw;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.me__myName{
+    // font-family: 'Dancing Script', cursive;
+    // font-family: 'Parisienne', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    padding: 20px;
+    display: block;
+    text-align: center;
+    width: 35vw;
+    background: $bgO30;
+    background: $colO70;
+    color: $col;
+    color: $bg;
+    border: 1px solid $col;
+    font-weight: 300;
+    font-size: 60px;
+    // text-transform: uppercase;
+    letter-spacing: 3px;
+
+}
+.me__prof{
+    // padding: 2px;
+    border: 1px solid $col;
+    color: $col;
+    background: $bg;
+    display: flex;
+    font-weight: 300;
+    width: 30vw;
+    justify-content: space-around;
+    transform:translateY(-50%);
+    
+}
+.me__prof--dev, .me__prof--data, .me__prof--math{
+    display: block;
+    // width: 10vw;
+    font-size: 10px;
+    margin: 8px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    // height: 50vh;
+    width: 20vw;
+    color: $col;
+    background: $bg;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        box-shadow: 5px 5px 10px $bgO30;
+        transform: translateX(-5px) translateY(-5px) scale(1.05);
+        background: $bgHover_2;
+    }
+
+}
+
+.panel__title{
+    font-weight: 300;
+    margin: 3vh auto;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px dashed $col;
+    letter-spacing: 2px;
+    font-size: 24px;
+
+}
+.panel_descript{
+    font-weight: 300;
+    padding: 20px 10px;
+    line-height: 2em;
+    height: 40vh;
+    text-align: center;
+    margin: auto;
+}
+
+.panel__btn{
+    margin: 3vh;
+    padding: 20px;
+    color: $col;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid $col;
+    background: transparent;
+    outline: none;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        letter-spacing: 3px;
+        padding: 20px 30px;
+        
+    }
+}
+
+
+}

@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|Lato:300,400,700|Parisienne&amp;subset=latin-ext");
+.workExperienceSection {
+  margin: 40px auto;
+  padding: 10px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.work {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.work--1, .work--2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px solid white;
+  margin: 40px;
+}
+
+.workTime {
+  padding: 10px;
+  min-width: 30vw;
+  background: #002427;
+  color: white;
+  font-weight: normal;
+  font-size: 14px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.workDescript {
+  padding: 10px;
+}
+
+.workDescript__title {
+  padding: 10px;
+  font-size: 24px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.workDescript__txt {
+  padding: 10px;
+  font-size: 16px;
+  word-wrap: break-word;
+  text-align: justify;
+}
+
+@media (orientation: landscape) {
+  .workDescript__txt {
+    padding: 10px;
+    font-size: 22px;
+    word-wrap: break-word;
+    text-align: justify;
+  }
+  .workTime {
+    font-size: 24px;
+    padding: 40px;
+  }
+}
+/*# sourceMappingURL=work.css.map */

@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|Lato:300,400,700|Parisienne&amp;subset=latin-ext");
+.sectionSkillsAbilities__title {
+  text-align: center;
+  font-family: "Fredericka the Great", cursive;
+  padding: 100px;
+}
+
+.sectionSkills__list {
+  margin: 5px;
+  padding: 10px;
+}
+
+.itemBoxSkill {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.skill__level {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-width: 30%;
+}
+
+.skill__font--star {
+  color: #BF7E04;
+  padding: 3px;
+}
+
+.ablility__name {
+  width: 100%;
+  color: white;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (orientation: landscape) {
+  .sectionSkills__list {
+    width: 50vw;
+    margin: auto;
+  }
+  .sectionAbilities__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 70vw;
+    margin: auto;
+  }
+  .itemBoxAbilities {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 1vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    background: #002427;
+  }
+  .itemBoxAbilities:nth-of-type(3n) {
+    background: #790220;
+  }
+  .itemBoxAbilities:nth-of-type(2n) {
+    margin: 14vh;
+  }
+  .itemBoxAbilities:nth-of-type(3n+1) {
+    background: #BF7E04;
+  }
+  .itemBoxAbilities:nth-of-type(2n) {
+    margin: 14vh;
+  }
+  .itemBoxAbilities:nth-of-type(4n+2) {
+    margin: 10vh;
+  }
+  .itemBoxAbilities:nth-of-type(7n+2) {
+    margin: 4vh;
+  }
+  .itemBoxAbilities:nth-of-type(2) {
+    margin-top: 20vh;
+  }
+  .sectionSkillsAbilities__title {
+    font-size: 60px;
+  }
+  .ablility__name {
+    font-size: 24px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: white;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+/*# sourceMappingURL=skills.css.map */

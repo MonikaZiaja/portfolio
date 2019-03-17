@@ -1,0 +1,8 @@
+@import '_colors';
+.mainFooter{
+    text-align: center;
+    padding: 20px;
+    background: $bg;
+    color: $bgHover_2;
+    border-top: 2px solid $bgHover_3;
+}

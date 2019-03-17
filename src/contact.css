@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|Lato:300,400,700|Parisienne&amp;subset=latin-ext");
+.contactSection__callMe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #BF7E04;
+  padding: 30px;
+  border-bottom: 2px solid #002427;
+  height: 60vh;
+}
+
+.contactSection__title--callMe {
+  color: white;
+  font-weight: 300;
+  text-align: center;
+  font-size: 60px;
+}
+
+.contact__title {
+  display: none;
+  height: 10vh;
+  border-top: 2px solid #BF7E04;
+  text-align: center;
+  background: #002427;
+  color: white;
+  font-weight: 300;
+  padding: 10vh;
+  padding-bottom: 0vh;
+}
+
+.contactSection {
+  height: 50vh;
+  background: #002427;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-preferred-size: 100vh;
+      flex-basis: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10vh;
+  border-bottom: 2px solid black;
+}
+
+.contactItem {
+  width: 20%;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contactItem__font {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50px;
+  height: 50px;
+  color: white;
+  font-size: 20px;
+  background: #002427;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  outline: none;
+}
+
+.contactItem__data {
+  color: white;
+  font-size: 16px;
+  font-weight: 300;
+  display: none;
+}
+
+@media (orientation: landscape) {
+  .contactItem {
+    width: 20%;
+    margin: 4vh 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contactItem__font {
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 40px;
+    padding: 1vh;
+    background: #002427;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out, color .2s ease-in-out;
+    transition: all .3s ease-in-out, color .2s ease-in-out;
+  }
+  .contactItem__font:hover {
+    color: #002427;
+    background: rgba(255, 255, 255, 0.5);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+/*# sourceMappingURL=contact.css.map */

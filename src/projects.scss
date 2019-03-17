@@ -1,0 +1,214 @@
+@import '_colors';
+.link--white{
+    color: $col;
+    text-decoration: none;
+    outline: none;
+}
+.projects__title{
+    margin-top: 100px;
+    padding: 20px;
+    font-size: 42px;
+    color: $bgHover_2;
+    text-align: center;
+    font-family: "Fredericka the Great", cursive;
+}
+.projects__txt--intro{
+    padding: 20px;
+    text-align: center;
+}
+.project{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 30vh;
+    width: 70vw;
+    background: $col;
+    margin: 5vh 10vw;
+
+}
+.project:nth-child(even){
+    margin-left: calc(20vw);
+    flex-direction: row-reverse;
+}
+.project__img{
+    width: 30vw;
+    overflow: hidden;
+    // display: flex;
+    // flex-direction: column;
+    box-shadow: 10px 10px 10px $bgO30;
+    border-radius: 10px;
+    &:hover .img__hover{
+        opacity:1;
+        transform: translateY(-100%);
+    }
+    
+}
+.img__prtsc{
+    // position: relative;
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+    object-position: center;
+    background: $bgHover;
+    border-radius: 10px;
+    border: 15px solid black;
+    
+}
+.img__hover{
+    height: 30vh;
+    background: $bgO85;
+    z-index: 2;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border-radius: 10px;
+}
+.hover__btn{
+    padding: 20px;
+    min-width: 30%;
+    margin: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid $col;
+    background: transparent;
+    color:$col;
+    transition: all .3s ease-in-out;
+    text-decoration: none;
+    // font-size: 14px;
+    cursor: pointer;
+    &:hover{
+        letter-spacing: 3px;
+        background: $bgHover;
+    }
+
+}
+.project__descript{
+    background: $col;
+    width: 50%;
+}
+.descript__title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.descript__txt{
+    width: 100%;
+    text-align: center;
+}
+
+@media(orientation: portrait){
+    @import '_colors';
+.project{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 95vw;
+    background: $col;
+    margin: 2.5vh 2.5vw;
+
+}
+.project:nth-child(even){
+    margin-left:2.5vw;
+    flex-direction: column;
+}
+.project__img{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    // display: flex;
+    // flex-direction: column;
+    box-shadow: none;
+    border-radius: 10px;
+    &:hover .img__hover{
+        opacity:1;
+        transform: translateY(-100%);
+    }
+    
+}
+.img__prtsc{
+    // position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    background: $bgHover;
+    border-radius: 10px;
+    border:15px solid black;
+    
+}
+.img__hover{
+    height: 40vh;
+    // background: $bgO85;
+    z-index: 2;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    // border-radius: 10px;
+}
+.hover__btn{
+    padding: 20px;
+    min-width: 30%;
+    margin: 5px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid $col;
+    background: transparent;
+    color:$col;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    &:hover{
+        letter-spacing: 3px;
+        background: $bgHover;
+    }
+
+}
+.project__descript{
+    background: $col;
+    width: 100%;
+}
+.descript__title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.descript__txt{
+    width: 100%;
+    text-align: center;
+}
+}
+@media (orientation:landscape){
+    .projects__title{
+        margin-top: 100px;
+        padding: 20px;
+        font-size: 120px;
+        color: $bgHover_2;
+        text-align: center;
+        font-family: "Fredericka the Great", cursive;
+    }
+    .projects__txt--intro{
+        padding: 10vh 40px;
+        text-align: center;
+        font-size: 50px;
+        color:$bgO50;
+    }
+    .project{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 30vh;
+        width: 80vw;
+        background: $col;
+        margin: 20vh 10vw;
+    
+    }
+    .project:nth-child(even){
+        margin-left: calc(0vw);
+        flex-direction: row-reverse;
+    }
+}

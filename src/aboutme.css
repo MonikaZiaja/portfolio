@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|Lato:300,400,700|Parisienne&amp;subset=latin-ext");
+.hide {
+  display: none;
+}
+
+.aboutMe {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100vw;
+  margin: auto;
+  margin-top: 10vh;
+}
+
+.aboutMe__box--img {
+  width: 80vw;
+  height: 50vh;
+  margin: auto;
+}
+
+.aboutMe__img {
+  height: 45vh;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.aboutMe__box--descript {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+}
+
+.descript__title--aboutMe {
+  color: #0E1F26;
+  letter-spacing: 2px;
+  font-weight: 300;
+  font-family: "Fredericka the Great", cursive;
+  text-align: center;
+  font-size: 50px;
+  padding: 10px;
+}
+
+.descript__txt {
+  padding: 10px;
+  color: black;
+  color: #0E1F26;
+  text-align: justify;
+}
+
+.descript__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.descript__btn {
+  padding: 20px;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 2px solid #0E1F26;
+  border: 2px solid #F2B705;
+  color: #0E1F26;
+  color: white;
+  background: transparent;
+  background: #BF7E04;
+  outline: none;
+  margin: 10px;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.descript__btn:hover {
+  -webkit-transform: scaleX(1.1);
+          transform: scaleX(1.1);
+}
+
+@media (orientation: landscape) {
+  .aboutMe {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 90vw;
+    margin: auto;
+    margin-top: 20vh;
+    margin-bottom: 30vh;
+  }
+  .aboutMe__box--img {
+    width: 50%;
+    height: 60vh;
+  }
+  .aboutMe__img {
+    height: 130%;
+    width: 100%;
+    -o-object-position: center;
+       object-position: center;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .aboutMe__box--descript {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 50%;
+  }
+  .descript__title {
+    color: #0E1F26;
+    letter-spacing: 2px;
+    font-weight: 300;
+    font-family: "Fredericka the Great", cursive;
+    text-align: center;
+    font-size: 70px;
+    padding: 30px;
+  }
+  .descript__txt {
+    padding: 30px;
+    color: black;
+    color: #0E1F26;
+  }
+  .descript__btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .descript__btn {
+    padding: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 2px solid #0E1F26;
+    border: 2px solid #F2B705;
+    color: #0E1F26;
+    color: white;
+    background: transparent;
+    background: #BF7E04;
+    outline: none;
+    margin: 30px;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .descript__btn:hover {
+    -webkit-transform: scaleX(1.1);
+            transform: scaleX(1.1);
+  }
+}
+/*# sourceMappingURL=aboutme.css.map */

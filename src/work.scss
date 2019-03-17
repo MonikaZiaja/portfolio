@@ -1,0 +1,57 @@
+@import '_colors';
+
+.workExperienceSection{
+    margin: 40px auto;
+    padding: 10px;
+    font-weight: 300;
+    text-align: center;
+}
+.work{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.work--1, .work--2{
+    display: flex;
+    border: 5px solid $col;
+    margin: 40px;
+}
+
+.workTime{
+    padding: 10px;
+    min-width: 30vw;
+    background: $bgHover_3;
+    color:$col;
+    font-weight:normal;
+    font-size: 14px;
+    text-align: center;
+    align-items: center;
+}
+
+.workDescript{
+    padding: 10px;
+}
+.workDescript__title{
+    padding: 10px;
+    font-size: 24px;
+    align-content: center;
+}
+.workDescript__txt{
+    padding: 10px;
+    font-size: 16px;
+    word-wrap: break-word;
+    text-align: justify;
+}
+@media(orientation:landscape){
+    .workDescript__txt{
+        padding: 10px;
+        font-size: 22px;
+        word-wrap: break-word;
+        text-align: justify;
+    }
+    .workTime{
+        font-size: 24px;
+        padding: 40px;
+    }
+}

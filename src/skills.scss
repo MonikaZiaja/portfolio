@@ -1,0 +1,102 @@
+@import '_colors';
+
+.sectionSkillsAbilities__title{
+    text-align: center;
+    font-family: $fontFamilyTitle;
+    padding: 100px;
+    // border-top: 1px solid $bgHover_2;
+    // border-bottom: 1px solid $bgHover_2;
+    // background: rgba(0, 0, 0, 0.76);
+    // color: $col;
+}
+
+.sectionSkills__list{
+    margin: 5px;
+    padding: 10px;
+    // border: 2px solid $bgHover_2;
+}
+.itemBoxSkill{
+    // border: 1px solid $bgHover_2;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.skill__level{
+    display: flex;
+    justify-content: center;
+    min-width: 30%;
+}
+.skill__font--star{
+    color: $bgHover_2;
+    padding: 3px;
+
+}
+ .ablility__name{
+    
+
+     width: 100%;
+     
+    //  border-radius: 50%;
+    //  background: #000;
+     color: $col;
+     text-align: center;
+     justify-content: center;
+ }
+
+ @media(orientation:landscape){
+     .sectionSkills__list{
+         width: 50vw;
+         margin: auto;
+     }
+     .sectionAbilities__list{
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-around;
+         width: 70vw;
+         margin: auto;
+     }
+     .itemBoxAbilities{
+         display: flex;
+         margin: 1vw;
+         justify-content: center;
+         align-items: center;
+         flex-wrap: wrap;
+         width: 12vw;
+        height: 12vw;
+        border-radius: 50%;
+        background: $bgHover_3;
+     }
+    .itemBoxAbilities:nth-of-type(3n){
+         background: $bgHover;
+    }
+    .itemBoxAbilities:nth-of-type(2n){
+        margin: 14vh;
+    }
+    .itemBoxAbilities:nth-of-type(3n+1){
+            background: $bgHover_2;
+    }
+    .itemBoxAbilities:nth-of-type(2n){
+     margin: 14vh;
+ }
+    .itemBoxAbilities:nth-of-type(4n+2){
+        margin: 10vh;
+   }
+.itemBoxAbilities:nth-of-type(7n+2){
+    margin: 4vh;
+}
+.itemBoxAbilities:nth-of-type(2){
+    margin-top: 20vh;
+}
+.sectionSkillsAbilities__title{
+    font-size: 60px;
+}
+     .ablility__name{
+        font-size: 24px;
+        display: flex;
+        color: $col;
+        text-align: center;
+        justify-content: center;
+    }
+ }
