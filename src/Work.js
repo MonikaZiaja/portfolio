@@ -4,7 +4,10 @@ class Work extends Component {
     render() { 
         return (  
             <>
-                <h1 className="workExperienceSection">Work Experience</h1>
+                <h1 className="workExperienceSection__title">Work Experience</h1>
+                <p className="workExperienceSection__txt">
+                Until the last few months I thought that I was going to work as data scientist, so professional experience I was building in this field.
+                </p>
                 <div className="work">
                     <div className="work--1">
                         <p className="workTime">2017 - 2018</p>

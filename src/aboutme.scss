@@ -10,10 +10,13 @@
         // height: 150vh;
         width: 100vw;
         margin: auto;
-        margin-top: 10vh;
+        padding-top: 20vh;
+
         
     }
     .aboutMe__box--img{
+        display: flex;
+        justify-content: center;
         width: 80vw;
         height: 50vh;
         margin: auto;
@@ -29,8 +32,8 @@
         flex-direction: column;
         // justify-content: space-around;
         align-items: center;
-        width: 95%;
-      
+        width: 85%;
+        margin-right: 15%;
     }
     .descript__title--aboutMe{
         color:$colDark;
@@ -41,7 +44,7 @@
         font-size: 50px;
         padding: 10px;
     }
-    .descript__txt{
+    .descript__txt--aboutMe{
         padding: 10px;
         color: $bg;
         color:$colDark;
@@ -50,12 +53,16 @@
         // border: 2px solid $lightYellow;
     
     }
-    .descript__btns{
+    .descript__txt--aboutMe:nth-of-type(1){
+        font-weight: normal;
+        font-size: 30px;
+    }
+    .descript__btns--aboutMe{
         display: flex;
         flex-direction: column;
     
     }
-    .descript__btn{
+    .descript__btn--aboutMe{
         padding: 20px;
         font-weight: normal;
         text-transform: uppercase;
@@ -88,6 +95,7 @@
     margin: auto;
     margin-top: 20vh;
     margin-bottom: 30vh;
+    align-items: flex-start;
 }
 .aboutMe__box--img{
     width: 50%;
@@ -107,7 +115,7 @@
     width: 50%;
   
 }
-.descript__title{
+.descript__title--aboutMe{
     color:$colDark;
     letter-spacing: 2px;
     font-weight: 300;
@@ -116,19 +124,18 @@
     font-size: 70px;
     padding: 30px;
 }
-.descript__txt{
+.descript__txt--aboutMe{
     padding: 30px;
     color: $bg;
     color:$colDark;
-    
-
+    font-size: 24px;
 }
-.descript__btns{
+.descript__btns--aboutMe{
     display: flex;
     flex-direction: row;
 
 }
-.descript__btn{
+.descript__btn--aboutMe{
     padding: 20px;
     font-weight: normal;
     text-transform: uppercase;

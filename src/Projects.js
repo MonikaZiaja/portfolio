@@ -23,8 +23,8 @@ const Project = props => {
             
             </div>
             <div className = 'project__descript'>
-                <h1 className = 'descript__title'>{props.title}</h1>
-                <p className = 'descript__txt'>{props.txt}</p>
+                <h1 className = 'descript__title--projects'>{props.title}</h1>
+                <p className = 'descript__txt--projects'>{props.txt}</p>
             </div>
 
         
@@ -72,11 +72,11 @@ class Projects extends Component {
     render() { 
         const {projects} = this.state
         return (  
-            <div>
+            <div ref="section">
                 <h1 className="projects__title">My projects</h1>
                 <p className="projects__txt--intro">Here are some of my projects. <br/> Most of them 
                 are under construction. </p>
-                {projects.map(project => <Project hregCode = {project.hrefCode} href = {project.href} img = {project.img} title = {project.title} txt = {project.txt}/>)}
+                {projects.map(project => <Project hrefCode = {project.hrefCode} href = {project.href} img = {project.img} title = {project.title} txt = {project.txt}/>)}
             </div>
         );
     }

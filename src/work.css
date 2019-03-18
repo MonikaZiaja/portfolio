@@ -1,9 +1,19 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|Lato:300,400,700|Parisienne&amp;subset=latin-ext");
-.workExperienceSection {
-  margin: 40px auto;
-  padding: 10px;
-  font-weight: 300;
+.workExperienceSection__title {
+  margin-top: 100px;
+  padding: 20px;
+  padding-top: 30vh;
+  font-size: 120px;
+  color: #BF7E04;
   text-align: center;
+  font-family: "Fredericka the Great", cursive;
+}
+
+.workExperienceSection__txt {
+  padding: 20vh 40px;
+  text-align: center;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 .work {
@@ -29,7 +39,7 @@
 
 .workTime {
   padding: 10px;
-  min-width: 30vw;
+  width: 40vw;
   background: #002427;
   color: white;
   font-weight: normal;
@@ -60,14 +70,21 @@
 
 @media (orientation: landscape) {
   .workDescript__txt {
-    padding: 10px;
+    padding: 10px 60px;
     font-size: 22px;
     word-wrap: break-word;
     text-align: justify;
   }
   .workTime {
+    width: 20vw;
     font-size: 24px;
     padding: 40px;
+  }
+  .workDescript__title {
+    padding-left: 60px;
+  }
+  .workExperienceSection__title {
+    font-size: 120px;
   }
 }
 /*# sourceMappingURL=work.css.map */

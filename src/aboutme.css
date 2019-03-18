@@ -16,10 +16,16 @@
       justify-content: space-around;
   width: 100vw;
   margin: auto;
-  margin-top: 10vh;
+  padding-top: 20vh;
 }
 
 .aboutMe__box--img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 80vw;
   height: 50vh;
   margin: auto;
@@ -44,7 +50,8 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 95%;
+  width: 85%;
+  margin-right: 15%;
 }
 
 .descript__title--aboutMe {
@@ -57,14 +64,19 @@
   padding: 10px;
 }
 
-.descript__txt {
+.descript__txt--aboutMe {
   padding: 10px;
   color: black;
   color: #0E1F26;
   text-align: justify;
 }
 
-.descript__btns {
+.descript__txt--aboutMe:nth-of-type(1) {
+  font-weight: normal;
+  font-size: 30px;
+}
+
+.descript__btns--aboutMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -74,7 +86,7 @@
           flex-direction: column;
 }
 
-.descript__btn {
+.descript__btn--aboutMe {
   padding: 20px;
   font-weight: normal;
   text-transform: uppercase;
@@ -92,7 +104,7 @@
   transition: all .3s ease-in-out;
 }
 
-.descript__btn:hover {
+.descript__btn--aboutMe:hover {
   -webkit-transform: scaleX(1.1);
           transform: scaleX(1.1);
 }
@@ -113,6 +125,9 @@
     margin: auto;
     margin-top: 20vh;
     margin-bottom: 30vh;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .aboutMe__box--img {
     width: 50%;
@@ -139,7 +154,7 @@
             align-items: center;
     width: 50%;
   }
-  .descript__title {
+  .descript__title--aboutMe {
     color: #0E1F26;
     letter-spacing: 2px;
     font-weight: 300;
@@ -148,12 +163,13 @@
     font-size: 70px;
     padding: 30px;
   }
-  .descript__txt {
+  .descript__txt--aboutMe {
     padding: 30px;
     color: black;
     color: #0E1F26;
+    font-size: 24px;
   }
-  .descript__btns {
+  .descript__btns--aboutMe {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -162,7 +178,7 @@
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  .descript__btn {
+  .descript__btn--aboutMe {
     padding: 20px;
     font-weight: normal;
     text-transform: uppercase;
@@ -179,7 +195,7 @@
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
   }
-  .descript__btn:hover {
+  .descript__btn--aboutMe:hover {
     -webkit-transform: scaleX(1.1);
             transform: scaleX(1.1);
   }

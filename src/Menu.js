@@ -23,16 +23,16 @@ const Circle = props => {
 class Menu extends Component {
     state = {  
         menu:[
-        {id:1, name:'Home', active:true},
-        {id:2, name:'About me', active:false},
-        {id:3, name:'Skills & Abilities', active:false, to:'/skills'},
-        {id:4, name:'How I work', active:false},
+        {id:1, name:'Home', active:true, to: 'home'},
+        {id:2, name:'About me', active:false, to: 'aboutme'},
+        {id:8, name:'Projects', active:false, to:'projects'},
+        {id:3, name:'Skills & Abilities', active:false, to:'skills'},
         // {id:5, name:'Front-end Dev', active:false},
         // {id:6, name:'Data Scientist', active:false},
         // {id:7, name:'Mathematician', active:false},
-        {id:8, name:'Projects', active:false, to:'/projects'},
-        {id:9, name:'Education', active:false},
-        {id:10, name:'Contact', active:false, to:'/contact'},
+        {id:4, name:'Work experience', active:false, to: 'work'},
+        {id:9, name:'Education', active:false, to: 'education'},
+        {id:10, name:'Contact', active:false, to:'contact'},
         ],
         isMobileMenuActive: true
     }
@@ -47,6 +47,9 @@ class Menu extends Component {
                 }) : item
             )
         }));
+        if (this.props.onMenuClick) {
+            this.props.onMenuClick(circle.to);
+        }
     }
     handleMenuTransform = () => {
         this.setState({

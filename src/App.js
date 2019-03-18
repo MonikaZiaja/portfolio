@@ -33,7 +33,7 @@ import Contact from './Contact';
 import Projects from './Projects';
 import Footer from './Footer';
 import Work from './Work';
-
+import scrollToComponent from 'react-scroll-to-component';
 
 
 
@@ -45,20 +45,32 @@ class App extends Component {
   // componentDidMount() {
   //   this.scrollBy(0,100);
   // }
+
+  constructor(props) {
+    super(props);
+    this.onMenuClick = this.onMenuClick.bind(this);
+  }
+
   render() {
     return (
      <>
-      <Menu />
-      <Header />
-      <AboutMe/>
-      <Projects/>
-      <Skills/>
-      <Education />
-      <Work/>
-      <Contact/>
+      <Menu onMenuClick={this.onMenuClick}/>
+      <Header ref = 'home'/>
+      <AboutMe ref = 'aboutme'/>
+      <Projects ref = 'projects'/>
+      <Skills ref = 'skills'/>
+      <Work ref = 'work'/>
+      <Education ref = 'education' />
+      <Contact ref = 'contact'/>
       <Footer />
      </>
     );
+  }
+
+  onMenuClick(path) {
+    this.refs[path] && scrollToComponent(this.refs[path], {
+      align: 'top'
+    })
   }
 }
 
