@@ -4,7 +4,7 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/p5.ef9e3a30.png"
   },
   {
-    "revision": "ba127c7373aaf9462169",
+    "revision": "abb92d719cb128b894bd",
     "url": "/portfolio/static/css/main.aab9bd33.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/js/runtime~main.ee2a1003.js"
   },
   {
-    "revision": "2d18396ce6ec041618f5327642084e82",
-    "url": "/portfolio/static/media/CVDev.2d18396c.pdf"
+    "revision": "81bdd6e2f3ad942a2ed3d8fed0cad493",
+    "url": "/portfolio/static/media/CVDev.81bdd6e2.pdf"
   },
   {
     "revision": "cde9e20ebcca9345cae938d65ac5249e",
@@ -44,8 +44,8 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/p4.308d19ee.png"
   },
   {
-    "revision": "ba127c7373aaf9462169",
-    "url": "/portfolio/static/js/main.ba127c73.chunk.js"
+    "revision": "abb92d719cb128b894bd",
+    "url": "/portfolio/static/js/main.abb92d71.chunk.js"
   },
   {
     "revision": "961bcb5476d6070c86e4cc3648a19819",
@@ -76,19 +76,19 @@ self.__precacheManifest = [
     "url": "/portfolio/static/media/fontawesome-webfont.fee66e71.woff"
   },
   {
-    "revision": "674f50d287a8c48dc19ba404d20fe713",
-    "url": "/portfolio/static/media/fontawesome-webfont.674f50d2.eot"
-  },
-  {
     "revision": "b06871f281fee6b241d60582ae9369b9",
     "url": "/portfolio/static/media/fontawesome-webfont.b06871f2.ttf"
+  },
+  {
+    "revision": "674f50d287a8c48dc19ba404d20fe713",
+    "url": "/portfolio/static/media/fontawesome-webfont.674f50d2.eot"
   },
   {
     "revision": "311f2131e8aea7fa9afb",
     "url": "/portfolio/static/css/1.7d9873a3.chunk.css"
   },
   {
-    "revision": "c34fe0e4e38e6b3cb171af20dfa5c87e",
+    "revision": "2eb3397669204a124e3ffd38e312c13d",
     "url": "/portfolio/index.html"
   }
 ];
