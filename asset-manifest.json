@@ -1,10 +1,10 @@
 {
-  "main.css": "/portfolio/static/css/main.e4cd6d87.chunk.css",
-  "main.js": "/portfolio/static/js/main.e1a04625.chunk.js",
-  "main.js.map": "/portfolio/static/js/main.e1a04625.chunk.js.map",
+  "main.css": "/portfolio/static/css/main.af209b86.chunk.css",
+  "main.js": "/portfolio/static/js/main.ac770689.chunk.js",
+  "main.js.map": "/portfolio/static/js/main.ac770689.chunk.js.map",
   "static/css/1.7d9873a3.chunk.css": "/portfolio/static/css/1.7d9873a3.chunk.css",
-  "static/js/1.2f4e4efd.chunk.js": "/portfolio/static/js/1.2f4e4efd.chunk.js",
-  "static/js/1.2f4e4efd.chunk.js.map": "/portfolio/static/js/1.2f4e4efd.chunk.js.map",
+  "static/js/1.24db5e6e.chunk.js": "/portfolio/static/js/1.24db5e6e.chunk.js",
+  "static/js/1.24db5e6e.chunk.js.map": "/portfolio/static/js/1.24db5e6e.chunk.js.map",
   "runtime~main.js": "/portfolio/static/js/runtime~main.ee2a1003.js",
   "runtime~main.js.map": "/portfolio/static/js/runtime~main.ee2a1003.js.map",
   "static/media/font-awesome.min.css": "/portfolio/static/media/fontawesome-webfont.912ec66d.svg",
@@ -20,9 +20,9 @@
   "static/media/header.css": "/portfolio/static/media/header.cb78d418.jpg",
   "static/media/contact.css": "/portfolio/static/media/header2.9c577ec2.jpg",
   "static/media/me.JPG": "/portfolio/static/media/me.cde9e20e.JPG",
-  "static/css/main.e4cd6d87.chunk.css.map": "/portfolio/static/css/main.e4cd6d87.chunk.css.map",
+  "static/css/main.af209b86.chunk.css.map": "/portfolio/static/css/main.af209b86.chunk.css.map",
   "static/css/1.7d9873a3.chunk.css.map": "/portfolio/static/css/1.7d9873a3.chunk.css.map",
   "index.html": "/portfolio/index.html",
-  "precache-manifest.78d006523a190b6ffc7b56f889337308.js": "/portfolio/precache-manifest.78d006523a190b6ffc7b56f889337308.js",
+  "precache-manifest.56a5aa6bcfa6c816e606fe5227a6b422.js": "/portfolio/precache-manifest.56a5aa6bcfa6c816e606fe5227a6b422.js",
   "service-worker.js": "/portfolio/service-worker.js"
 }
