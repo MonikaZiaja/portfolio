@@ -2,6 +2,7 @@
 .hide{
     display: none;
 }
+
     .aboutMe{
         position: relative;
         display: flex;
@@ -13,6 +14,18 @@
         padding-top: 20vh;
 
         
+    }
+    .arrowDown--aboutMe{
+        color: $bg;
+        font-size: 40px;
+        margin: 5vh auto 0;
+        background: transparent;
+        height: 10vh;
+        width: 10vh;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        // border-radius: 50%;
     }
     .aboutMe__box--img{
         display: flex;
@@ -33,7 +46,7 @@
         // justify-content: space-around;
         align-items: center;
         width: 85%;
-        margin-right: 15%;
+        margin:auto;
     }
     .descript__title--aboutMe{
         color:$colDark;
@@ -43,23 +56,35 @@
         text-align: center;
         font-size: 50px;
         padding: 10px;
+        width: 100%;
     }
     .descript__txt--aboutMe{
         padding: 10px;
         color: $bg;
         color:$colDark;
+        text-align: center;
         text-align: justify;
-        // font-weight: normal;
+        font-size: 20px;
+        font-weight: normal;
         // border: 2px solid $lightYellow;
     
     }
+    .descript__txtTitle--aboutMe{
+        font-size: 40px;
+        font-weight: 500;
+        color: $bgHover_2;
+    }
+   
     .descript__txt--aboutMe:nth-of-type(1){
-        font-weight: normal;
-        font-size: 30px;
+        text-align: center;
+    //     font-weight: normal;
+    //     font-size: 20px;
     }
     .descript__btns--aboutMe{
         display: flex;
         flex-direction: column;
+        align-items: center;
+        padding-top: 10vh;
     
     }
     .descript__btn--aboutMe{
@@ -84,7 +109,7 @@
         }
     }
 
-@media(orientation:landscape){
+@media(orientation:landscape) and (min-width: 1050px){
    
 .aboutMe{
     display: flex;

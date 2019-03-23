@@ -6,7 +6,7 @@ class Work extends Component {
             <>
                 <h1 className="workExperienceSection__title">Work Experience</h1>
                 <p className="workExperienceSection__txt">
-                Until the last few months I thought that I was going to work as data scientist, so professional experience I was building in this field.
+                Until the last few months I thought that I was going to work as data scientist, therefore I was building my professional experience around this field.
                 </p>
                 <div className="work">
                     <div className="work--1">

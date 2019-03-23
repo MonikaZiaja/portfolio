@@ -7,6 +7,7 @@
 .projects__title{
     margin-top: 100px;
     padding: 20px;
+    padding-top: 30vh;
     font-size: 42px;
     color: $bgHover_2;
     text-align: center;
@@ -104,7 +105,7 @@
     padding: 20px;
 }
 
-@media(orientation: portrait){
+@media(orientation: portrait), (max-width:1050px){
     @import '_colors';
 .project{
     display: flex;

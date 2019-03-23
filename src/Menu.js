@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import pdf from './img/CVDev.pdf';
 import {
     Route,
     NavLink,
@@ -60,10 +61,26 @@ class Menu extends Component {
         const {menu, isMobileMenuActive} = this.state
         return ( 
             <>
-            <div className = 'firstHeader' onClick = {this.handleMenuTransform}>{isMobileMenuActive ? <FaBars/> : <FaTimes/>}</div>
+            <div className = 'firstHeader' onClick = {this.handleMenuTransform}>
+            <div className='firstHeader--myName'>Monika Ziaja</div>
+            {isMobileMenuActive ? <FaBars /> 
+            :
+            <> 
+            <FaTimes/>
+            <ul className = 'mainMenuMobile'>
+                {menu.map(li => <Li class = {li.active ? 'mainMenu__item active' : 'mainMenu__item'} id = {li.id} click = {this.handleActiveMenuItem.bind(this, li)} name = {li.name} to = {li.to}/>)}
+                
+            </ul>
+            </>
+            }</div>
             <ul className = 'mainMenu'>
                 {menu.map(li => <Li class = {li.active ? 'mainMenu__item active' : 'mainMenu__item'} id = {li.id} click = {this.handleActiveMenuItem.bind(this, li)} name = {li.name} to = {li.to}/>)}
-                <li className='mainMenu__item--me'>MonikaZiaja</li>
+                
+                <a href={pdf} download>
+                <li className='mainMenu__item--CV'>
+                    Download CV
+                </li>
+                    </a>
             </ul>
             <div className = 'menuCircles'>
             {menu.map(circle => <Circle class = {circle.active ? 'circle active':'circle'} id = {circle.id} active = {circle.active} click = {this.handleActiveMenuItem.bind(this, circle)}/>)}

@@ -46,7 +46,7 @@ class Skills extends Component {
             {id:1, name: 'creativity'},
             {id:2, name: 'productivity'},
             {id:3, name: 'flexibility'},
-            {id:4, name: 'open-minded'},
+            {id:4, name: 'open-mind'},
             {id:5, name: 'team work ability'},
             {id:6, name: 'stress resistance'},
             {id:7, name: 'analytical thinking'},

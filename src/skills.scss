@@ -1,8 +1,9 @@
 @import '_colors';
 
 .sectionSkillsAbilities__title{
+    font-weight: 300;
     text-align: center;
-    font-family: $fontFamilyTitle;
+    // font-family: $fontFamilyTitle;
     padding: 100px;
 }
 .sectionAbilities__list{

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>nth-child</title>
+    <style>
+        .nth-child{
+            display: flex;
+            flex-direction: column;
+        }
+        .spans{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        span{
+            width: 5vh;
+            height: 5vh;
+            background: #000;
+            margin: 10px;
+        }
+        .oneElement__spans > span:nth-child(7){
+            background: darkgoldenrod;
+        }
+        .range__spans > span:nth-child(n + 7){
+            background: darkgoldenrod;
+        }
+        .rangeNegative__spans > span:nth-child(-n + 7){
+            background: darkgoldenrod;
+        }
+        .rangeGeneric__spans > span:nth-child(n + 3):nth-child(-n+9){
+            background: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="nth-childSection">
+            <div class="nth-child__oneElement nth-child">
+                <p class="oneElement__descript descript">One element</p>
+                <div class="oneElement__spans spans">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="nth-child__range nth-child">
+                    <p class="range__descript descript">One element</p>
+                    <div class="range__spans spans">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="nth-child__range nth-child">
+                        <p class="range__descript descript">One element</p>
+                        <div class="rangeNegative__spans spans">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                <div class="nth-child__range nth-child">
+                        <p class="range__descript descript">One element</p>
+                        <div class="rangeGeneric__spans spans">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+        </section>
+
+    </div>
+</body>
+</html>

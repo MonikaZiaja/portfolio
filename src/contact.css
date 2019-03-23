@@ -13,23 +13,27 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #BF7E04;
+  background: url("./img/header2.jpg") center;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 30px;
-  border-bottom: 2px solid #002427;
+  border-bottom: 2px solid #BF7E04;
+  border-top: 2px solid #002427;
   height: 60vh;
 }
 
 .contactSection__title--callMe {
   color: white;
-  font-weight: 300;
+  font-weight: 500;
   text-align: center;
-  font-size: 60px;
+  font-size: 40px;
+  text-shadow: 0 0 3px black;
 }
 
 .contact__title {
   display: none;
   height: 10vh;
-  border-top: 2px solid #BF7E04;
+  border-top: 2px solid #002427;
   text-align: center;
   background: #002427;
   color: white;
@@ -40,7 +44,7 @@
 
 .contactSection {
   height: 50vh;
-  background: #002427;
+  background: #BF7E04;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -86,7 +90,7 @@
   height: 50px;
   color: white;
   font-size: 20px;
-  background: #002427;
+  background: #BF7E04;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   outline: none;
@@ -99,7 +103,7 @@
   display: none;
 }
 
-@media (orientation: landscape) {
+@media (orientation: landscape) and (min-width: 1050px) {
   .contactItem {
     width: 20%;
     margin: 4vh 10px;
@@ -119,7 +123,7 @@
     color: white;
     font-size: 40px;
     padding: 1vh;
-    background: #002427;
+    background: #BF7E04;
     border: 2px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
     outline: none;
@@ -128,7 +132,7 @@
     transition: all .3s ease-in-out, color .2s ease-in-out;
   }
   .contactItem__font:hover {
-    color: #002427;
+    color: #BF7E04;
     background: rgba(255, 255, 255, 0.5);
     -webkit-transform: scale(1.1);
             transform: scale(1.1);

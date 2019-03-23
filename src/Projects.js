@@ -36,9 +36,9 @@ class Projects extends Component {
     state = { 
         projects:[
             {id: 1, img: project1, title:'Data Science', 
-            href:'https://monikaziaja.github.io/Data-Science/' ,
-            hrefCode:'https://github.com/MonikaZiaja/Data-Science' ,
-            txt:'Page under construction represents the new specialisation at Univercity of Wroclaw.'}
+            href:'https://monikaziaja.github.io/Data-Science-eng/' ,
+            hrefCode:'https://github.com/MonikaZiaja/Data-Science-eng' ,
+            txt:'Page under construction represents the new specialisation at Univercity of Wroclaw. It was created using JavaScript, jQuery, CSS3, HTML5. I also added some parallax effects.'}
             ,{id: 2, img: project2, title:'Spinners&Loaders', 
             href:'https://monikaziaja.github.io/Spinners/' ,
             hrefCode:'https://github.com/MonikaZiaja/Spinners' ,
@@ -46,27 +46,27 @@ class Projects extends Component {
            ,{id: 7, img: project7, title:'KNZM', 
            href:'http://knzm.math.uni.wroc.pl/#/' ,
            hrefCode:'https://github.com/MonikaZiaja/KNZM' ,
-            txt:'Page under construction for the students scientific association KNZM.'}
+            txt:'Page under construction for the students scientific association KNZM. React.js.'}
             ,{id: 8, img: project8, title:'Add number', 
             href:'https://monikaziaja.github.io/projectXS--addNumber/' ,
             hrefCode:'https://github.com/MonikaZiaja/projectXS--addNumber' ,
-            txt:'Project is just a form of exercise.'}
+            txt:'Project is just a form of exercise. Select the frequency, color and shape of the special buttons. This project has no mobile version.'}
             ,{id: 3, img: project3, title:'Exchange counter', 
             href:'https://monikaziaja.github.io/exchangeCounter/' ,
             hrefCode:'https://github.com/MonikaZiaja/exchangeCounter' ,
-            txt:'Project is just a form of exercise.'}
+            txt:'Project is just a form of exercise. You can select the product, amount of it and check the value in various currencies.'}
             ,{id: 4, img: project4, title:'Count clicks', 
             href:'https://monikaziaja.github.io/click--counter/' ,
             hrefCode:'https://github.com/MonikaZiaja/click--counter' ,
-            txt:'Project is just a form of exercise.'}
+            txt:'Project is just a form of exercise. You can count how many times you click on the shapes.'}
             ,{id: 5, img: project5, title:'Blog', 
             href:'https://monikaziaja.github.io/onePage--lifeStyle/' ,
             hrefCode:'https://github.com/MonikaZiaja/onePage--lifeStyle' ,
-            txt:'Project is just a form of exercise.'}
+            txt:'Project is just a form of exercise. It is my first project with parallax effects. Foremost I used @keyframes to animate elements. This project has no mobile version. '}
             ,{id: 6, img: project6, title:'Page split', 
             href:'https://monikaziaja.github.io/onePage--3split/' ,
             hrefCode:'https://github.com/MonikaZiaja/onePage--3split' ,
-            txt:'Project is just a form of exercise.'}
+            txt:'Project is just a form of exercise. This is also one of my first projects. It was created using pure JavaScript and hover effects in CSS3. This project has no mobile version.'}
         ]
      }
     render() { 
@@ -74,8 +74,7 @@ class Projects extends Component {
         return (  
             <div ref="section">
                 <h1 className="projects__title">My projects</h1>
-                <p className="projects__txt--intro">Here are some of my projects. <br/> Most of them 
-                are under construction. </p>
+                <p className="projects__txt--intro">Below are some of my projects. I start them to practice new technologies, help out my unversity or just for the pure fun of creating them. </p>
                 {projects.map(project => <Project hrefCode = {project.hrefCode} href = {project.href} img = {project.img} title = {project.title} txt = {project.txt}/>)}
             </div>
         );

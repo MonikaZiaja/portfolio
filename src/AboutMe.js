@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import photoMe from './img/me.JPG'; // with import
-
+import pdf from './img/CVDev.pdf';
+import { FaPhone, FaEnvelope, FaGithub, FaLinkedinIn,FaAngleDoubleDown, FaArrowDown} from 'react-icons/fa';
 class AboutMe extends Component {
     state = { 
         show:false,
@@ -22,35 +23,64 @@ class AboutMe extends Component {
                 <div className = 'aboutMe__box--descript'>
                     <h1 className = 'descript__title--aboutMe'>About me</h1>
                     <p className = 'descript__txt--aboutMe'>
-                    Hi! I am Monika. <br/> <br/>
-                    I am a passionate beginner web developer and student of mathematics 
+                    Hi! I am Monika.
+                    I am a passionate beginner web developer and student of mathematics.
                     I am crazy about programming and coding.
                     </p>
                     {
+                    show ? null :
+                    <button onClick = {this.handleHideOnClick.bind(this)}  className="arrowDown--aboutMe">
+                    <FaAngleDoubleDown/>
+                    </button>
+                    }
+                    {
                         show ?
                         <>
+                    <h1 className="descript__txtTitle--aboutMe">Why maths?</h1>
                     <p className = 'descript__txt--aboutMe'>
-                    I am a person who loves a combination of logic and art with a predominance of logic.  
-                    One of my lecturers says that mathematician is not a job is a way of being. 
-                    For me studying mathematics are a great adventure and tough experience. 
-                    During these studies, I have learned not only how to solve mathematician problems but primarily how to think in a critical and logical way. 
-                    I also learnt patient and conscientious work.
+                    One of my lecturers always says that ``Mathematician is not a job, it is a way of being." 
+                    and I totally agree with him, studying mathematics is a great adventure and tough 
+                    experience. During these studies I have learned not only how to solve mathematician 
+                    problems but primarily how to think abstractly and logically. I have also learned patience and conscientious work.</p>
+                    <h1 className="descript__txtTitle--aboutMe">How do I work?</h1>
+                    <p className = 'descript__txt--aboutMe'>Whatever I do, not only at work, I always follow these rules:
+                    <br/> <br/> 
+                    <strong> Try to find something that I love about my task.</strong>
+                    <br/> <br/> 
+                    It makes me a better constructionist, I work passionately and truly enjoy my assignments.
+                    <br/> <br/> 
+                    <strong> Try to deliver ready to use product.</strong>
+                   <br/> <br/> 
+                    My priority is to keep deadlines. Firstly I design and implement a minimalistic version of a project and after that I can add improvements.
+                    <br/> <br/> 
+                    <strong>If you do something you should do it well.</strong>
+                    <br/> <br/> 
+                    I am self-responsible but I've also learned to ask others, about their ideas, 
+                    their experience and share the knowledge between coworkers. This comes always 
+                    with great benefits for me and for the projects we're working on.
+                    <br/> <br/> 
                     </p>
+                    <h1 className="descript__txtTitle--aboutMe">How do I develop my programming skills?</h1>
                     <p className = 'descript__txt--aboutMe'>
-                    Sometimes people think that I am a perfectionist but I am not. 
-                    However in my opinion, if you do something you should do it well. 
-                    I work passionately. I always try to find something that I love about my task. It makes me a better construction, because then I truly enjoy my work and I do not feel overwhelmed. 
+                    <br/> <br/> 
+                    <strong>My projects</strong>
+                    <br/> <br/> 
+                    I design my own projects and assign myself tasks.
+	When I encounter a problem I try to resolve it by doing research
+    I also like to ask my more experienced friends for tasks and project ideas, as I benefit from their knowledge and can always expect constructive criticism.<br/> <br/> 
+                    <strong>Courses</strong>
+                    <br/> <br/> 
+                    I practise an effective method. Firstly I read or watch a lesson. Then I try to do the excerices from the course without any help and compare my results with course materials.
+                    In the end I try to work on something different, covering the same areas to practice gained knowledge. In the last step I often design and develop small websites or apps.
+                   
                     </p>
-                    <p className = 'descript__txt--aboutMe'>
-                    Another essential thing is to be organized. Firstly I always set my main yearly goals, then I think what I have to do to achieve them. I make a plan for upcoming months, weeks and days. I also write down the first needed step. Then I can see why it is important to keep all task each day. 
-                    I can not live without challenges and the most I appreciate constructive criticism because then I can see that someone really pay attention to what I am doing. Only then I can learn something.
-                   </p>
+                    
                    </>
                     
                 :null
                 }
                     <div className = 'descript__btns--aboutMe'>
-                    <a href='./img/CVDev.pdf' download>
+                    <a href={pdf} download>
                      
                     <button className = 'descript__btn--aboutMe'>Download CV</button>
                     </a>

@@ -1,81 +1,86 @@
 @import url("https://fonts.googleapis.com/css?family=Dancing+Script:400,700|Fredericka+the+Great|Lato:300,400,700|Parisienne&amp;subset=latin-ext");
-.firstHeader {
-  display: none;
+@media (min-width: 1024px) {
+  .firstHeader {
+    display: none;
+  }
+  .mainMenu {
+    position: fixed;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    border-radius: none;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    background: black;
+    z-index: 5;
+  }
+  .mainMenu__item {
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    letter-spacing: 1px;
+    border-bottom: 2px solid black;
+  }
+  .mainMenu__item:hover {
+    background: #BF7E04;
+    border-bottom: 2px solid #BF7E04;
+  }
+  .mainMenu__item.active {
+    background: rgba(191, 126, 4, 0.5);
+    border-bottom: 2px solid #BF7E04;
+    cursor: auto;
+  }
+  .mainMenu__item--CV {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 5px;
+    font-weight: 300;
+    color: white;
+    padding: 10px;
+    border: 10px solid black;
+    background: rgba(191, 126, 4, 0.5);
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .mainMenu__item--CV:hover {
+    background: #BF7E04;
+  }
+  .menuCircles {
+    display: none;
+    position: fixed;
+    right: 20px;
+    top: 40%;
+  }
+  .circle {
+    padding: 5px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+  }
+  .circle:hover {
+    background: black;
+  }
+  .circle.active {
+    background: black;
+    -webkit-box-shadow: 0 0 0 10px bgHover_2;
+            box-shadow: 0 0 0 10px bgHover_2;
+  }
 }
 
-.mainMenu {
-  position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  border-radius: none;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  background: black;
-  z-index: 5;
-}
-
-.mainMenu__item {
-  padding: 20px;
-  color: white;
-  cursor: pointer;
-  -webkit-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  letter-spacing: 1px;
-  border-bottom: 2px solid black;
-}
-
-.mainMenu__item:hover {
-  background: #BF7E04;
-  border-bottom: 2px solid #BF7E04;
-}
-
-.mainMenu__item.active {
-  background: rgba(191, 126, 4, 0.5);
-  border-bottom: 2px solid #BF7E04;
-  cursor: auto;
-}
-
-.mainMenu__item--me {
-  display: none;
-  font-family: 'Dancing Script', cursive;
-  font-weight: 400;
-  color: white;
-}
-
-.menuCircles {
-  position: fixed;
-  right: 20px;
-  top: 40%;
-}
-
-.circle {
-  padding: 5px;
-  border: 2px solid black;
-  margin: 10px;
-  border-radius: 50%;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
-  cursor: pointer;
-}
-
-.circle:hover {
-  background: black;
-}
-
-.circle.active {
-  background: black;
-  -webkit-box-shadow: 0 0 0 10px bgHover_2;
-          box-shadow: 0 0 0 10px bgHover_2;
-}
-
-@media (orientation: portrait) {
+@media (orientation: portrait), (max-width: 1050px) {
   .firstHeader {
     position: fixed;
     display: -webkit-box;
@@ -84,14 +89,26 @@
     background: black;
     color: white;
     padding: 10px;
+    padding-right: 20px;
     width: 100vw;
     z-index: 10;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 10vh;
   }
-  .mainMenu {
+  .firstHeader--myName {
+    color: white;
+    font-family: 'Fredericka the Great', cursive;
+    padding-left: 20px;
+  }
+  .mainMenuMobile {
     position: fixed;
+    top: 10vh;
+    left: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -102,12 +119,19 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 90vh;
     background: black;
     z-index: 5;
-    -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    -webkit-animation: changeColor 5s infinite;
+            animation: changeColor 5s infinite;
+  }
+  .menuFont {
+    padding-right: 20px;
+    color: white;
+  }
+  .mainMenu {
+    display: none;
   }
   .mainMenu__item {
     padding: 20px;
@@ -116,7 +140,7 @@
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     letter-spacing: 1px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid transparent;
     text-align: center;
   }
   .mainMenu__item:hover {
@@ -124,7 +148,7 @@
     border-bottom: 2px solid #BF7E04;
   }
   .mainMenu__item.active {
-    background: rgba(191, 126, 4, 0.5);
+    background: #BF7E04;
     border-bottom: 2px solid #BF7E04;
     cursor: auto;
   }
@@ -156,6 +180,24 @@
     background: black;
     -webkit-box-shadow: 0 0 0 10px bgHover_2;
             box-shadow: 0 0 0 10px bgHover_2;
+  }
+}
+
+@-webkit-keyframes changeColor {
+  0%, 100% {
+    background: #000b0c;
+  }
+  50% {
+    background: black;
+  }
+}
+
+@keyframes changeColor {
+  0%, 100% {
+    background: #000b0c;
+  }
+  50% {
+    background: black;
   }
 }
 /*# sourceMappingURL=menu.css.map */
